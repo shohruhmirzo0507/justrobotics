@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+nav {
+    width: 100%;
+    height: 180px;
+    background: #ffe000;
+    padding-top: 9px;
+}
+
+.navbar {
+    width: 100%;
+    height: 157px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.nav__logo {
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    background: #ffe000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 80px;
+}
+
+.container li {
+    font-size: 24px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+}
+
+.drop {
+    width: 139px;
+    height: 45px;
+    border: 1px solid #F0D625;
+    background: transparent;
+    color: #F0D625;
+    font-size: 24px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.down {
+    position: absolute;
+    z-index: 1;
+    width: 289px;
+    height: auto;
+    display: none;
+    padding-top: 8px;
+}
+
+.down a {
+    color: #F0D625;
+    text-decoration: none;
+    height: 45px;
+    border: 1px solid #F0D625;
+    margin: 4px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+
+.dropdown:hover .down {
+    display: block;
+}
+
+.nav__btn {
+    width: 248px;
+    height: 62px;
+    color: #000000;
+    font-size: 24px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 700;
+    border-radius: 7px;
+    background: #ffe000;
+    box-shadow: 3px 3px 18px 9px #7c6e04;
+    border: none;
+}
+
+.nav__lang {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.lang__button {
+    width: 85px;
+    height: 52px;
+    font-size: 22px;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #F0D625;
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.lang__button.active {
+    background-color: #F0D625;
+    color: white;
+}
+
+.nav__bars {
+    font-size: 50px;
+    display: none;
+}
+
+
+
+@media screen and (max-width:1440px) {
+    .container {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        gap: 20px;
+    }
+
+    .nav__btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .nav__btn {
+        display: none;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .nav__bars {
+        display: flex;
+        align-items: center;
+
+    }
+    .nav__lang{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        height: 98px;
+    }
+    .navbar{
+        height: 80px;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+    .nav__logo{
+        width: 55px;
+        height: 55px;
+    }
+    .nav__logo img{
+        width: 26px;
+    }
+
+    .nav__btn {
+        display: none;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .nav__bars {
+        display: block;
+        font-size: 40px;
+        margin-left: 10px;
+
+    }
+    .lang__button{
+        width: 60px;
+        height: 40px;
+    }
+    .nav__lang{
+        padding: 0px;
+        gap: 5px;
+    }
+}

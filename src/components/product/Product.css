@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+
+.product {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    background: url("../../assets/background.png") no-repeat center/cover;
+}
+
+.prod__title {
+    font-size: 96px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 700;
+    color: #F0D625;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.prod__main {
+    width: 85%;
+    height: auto;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.prod__box {
+    width: 550px;
+    height: 508px;
+    background: #F0D625;
+    border-radius: 30px;
+    padding: 50px;
+    position: relative;
+    box-shadow: 5px 5px 55px 15px #a29005;
+
+}
+
+.prod__box img {
+    width: 450px;
+    height: 212px;
+    border-radius: 30px;
+
+
+}
+
+.prod__box h1 {
+    font-size: 40px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.prod__btn {
+    width: 260px;
+    height: 41px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    background: #000000;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.prod__sweap{
+    width: 85%;
+    height: auto;
+    margin: 100px auto;
+    padding: 10px;
+  }
+  .prod__sweap h1{
+    font-size: 30px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 700;
+    color: #F0D625;
+  }
+
+
+
+
+@media screen and (max-width:1380px) {
+    .prod__title {
+        font-size: 86px;
+    }
+
+    .prod__box {
+        width: 450px;
+        height: 458px;
+        padding: 30px;
+    }
+
+    .prod__box img {
+        width: 100%;
+        height: 192px;
+        border-radius: 30px;
+    }
+
+    .prod__box h1 {
+        font-size: 35px;
+        font-family: "Tektur", sans-serif;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .product {
+        padding-top: 50px;
+    }
+
+    .prod__main {
+        margin: 50px auto;
+        gap: 40px;
+    }
+
+    .prod__title {
+        font-size: 76px;
+    }
+
+    .prod__box {
+        width: 400px;
+        height: 408px;
+        padding: 30px;
+    }
+
+    .prod__box img {
+        height: 172px;
+    }
+
+    .prod__box h1 {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .prod__btn {
+        width: 230px;
+        height: 36px;
+        right: 30px;
+        bottom: 30px;
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .product {
+        padding-top: 30px;
+    }
+
+    .prod__main {
+        width: 90%;
+        margin: 30px auto;
+        gap: 40px;
+    }
+
+    .prod__title {
+        font-size: 56px;
+    }
+
+    .prod__box {
+        width: 350px;
+        height: 328px;
+        padding: 15px;
+    }
+
+    .prod__box img {
+        height: 152px;
+    }
+
+    .prod__box h1 {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .prod__btn {
+        width: 200px;
+        height: 30px;
+        right: 30px;
+        bottom: 30px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+}
+
+@media screen and (max-width:850px) {
+    .product {
+        padding-top: 30px;
+    }
+
+    .prod__main {
+        width: 90%;
+        margin: 15px auto;
+        gap: 30px;
+    }
+
+    .prod__title {
+        font-size: 46px;
+    }
+
+    .prod__box {
+        width: 280px;
+        height: 288px;
+        padding: 15px;
+    }
+
+    .prod__box img {
+        height: 142px;
+    }
+
+    .prod__box h1 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .prod__btn {
+        width: 170px;
+        height: 30px;
+        right: 30px;
+        bottom: 30px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+}
+
+  @media screen and (max-width: 670px) {
+    .prod__title {
+        font-size: 36px;
+    }
+    .prod__main {
+      display: flex;
+      flex-wrap: nowrap; 
+      overflow-x: auto; 
+      gap: 20px;
+      padding: 20px 10px;
+      -webkit-overflow-scrolling: touch; 
+      scroll-snap-type: x mandatory; 
+    }
+  
+    .prod__box {
+      flex: 0 0 auto; 
+      width: 280px; 
+      height: 270px;
+      scroll-snap-align: start; 
+      background: #fdd700;
+      border-radius: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 1px 1px 15px 5px #a29005;
+
+    }
+  
+    .prod__box h1 {
+      font-size: 16px;
+      word-break: break-word;
+    }
+  
+    .prod__btn {
+      width: 140px;
+      height: 35px;
+      margin-top: 15px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      right: 15px;
+      bottom: 15px;
+    }
+    .prod__sweap{
+        width: 95%;
+        height: auto;
+        margin: 20px auto;
+      }
+ 
+  }
+  

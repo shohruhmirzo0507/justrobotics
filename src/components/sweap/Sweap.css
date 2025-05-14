@@ -1,0 +1,54 @@
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .speap__card {
+    width: 220px;
+    height: 350px;
+    text-align: center;
+    font-size: 18px;
+    background: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 2px 2px 25px 9px #7a6c08;
+
+  }
+  
+  .speap__card img {
+    width: 80px;
+    height: 48px;
+  }
+
+
+  @media screen and (max-width: 670px) {
+    .speap__card {
+        box-shadow: 1px 1px 15px 3px #7a6c08;
+      }
+      .swiper {
+        padding: 0px;
+
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
