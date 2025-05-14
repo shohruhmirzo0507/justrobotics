@@ -10,7 +10,7 @@ function Lead() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-
+        
         const form = e.target;
         const name = form.name.value;
         const phone = form.phone.value;
@@ -30,12 +30,12 @@ function Lead() {
             }),
         })
         .then(() => {
-            alert("✅ Ma'lumot yuborildi!");
+            alert("Ma'lumot yuborildi!");
             form.reset();
             setLoading(false);
         })
         .catch((err) => {
-            alert("❌ Xatolik yuz berdi: " + err);
+            alert("Xatolik yuz berdi: " + err);
             setLoading(false);
         });
     };
